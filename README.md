@@ -4,7 +4,7 @@ A MERN stack application i built with mongoDB, Express, React and NodeJS.
 ## Features
 - API endpoints with Express
 - Authentication with JSON Web Token including User Registration, Login and Password Reset
-- CRUD functionality on various routes(auth, users, allUsers, purchases, products, customers, suppliers, sales). I'll probably add more later
+- CRUD functionality on various routes(auth, users, allUsers, products, customers). I'll probably add more later
 - Upload image with multer and save to folder
 - Protect routes to only be accessed by logged-in users
 - Frontend pages with React and SCSS
