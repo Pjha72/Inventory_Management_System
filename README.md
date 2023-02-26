@@ -5,7 +5,6 @@ A MERN stack application i built with mongoDB, Express, React and NodeJS.
 - API endpoints with Express
 - Authentication with JSON Web Token including User Registration, Login and Password Reset
 - CRUD functionality on various routes(auth, users, allUsers, purchases, products, customers, suppliers, sales). I'll probably add more later
-- 
 - Upload image with multer and save to folder
 - Protect routes to only be accessed by logged-in users
 - Frontend pages with React and SCSS
@@ -27,19 +26,13 @@ A MERN stack application i built with mongoDB, Express, React and NodeJS.
 
 ### Routes
 
-- `/api/allUsers`: This GET route serves json of all registers users as an array of objects(when parsed). Fields include `memberSince`, `username`, `email`, `company`
+- `/api/allUsers`: This GET route serves json of all registers users as an array of objects(when parsed).
 
 - `/api/auth`: This route does two things. The GET method authenticates a logged in user(private route and requires a token) by using the token to check for the user. Thereby returning the currently logged in user. The POST method is used for logging in a user and authenticating them. Fields required: one of of `email` or `username` and `password`.
 
 - `/api/customers`: This has GET, POST, PUT and DEL methods. They perform CRUD functionalities for an authenticated user's customers.
 
 - `/api/products`: This has GET, POST, PUT and DEL methods. They perform CRUD functionalities for an authenticated user's products.
-
-- `/api/purchases`: This has GET, POST, PUT and DEL methods. They perform CRUD functionalities for an authenticated user's purchases.
-
-- `/api/sales`: This has GET, POST, PUT and DEL methods. They perform CRUD functionalities for an authenticated user's sales.
-
-- `/api/suppliers`: This has GET, POST, PUT and DEL methods. They perform CRUD functionalities for an authenticated user's suppliers.
 
 - `/api/users`: This has POST, PUT and DEL methods. They respectively create users, edit users' details and delete users.
 
